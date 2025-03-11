@@ -1,0 +1,87 @@
+.input,
+.btn {
+  /* border: 0.2rem solid crimson; */
+  display: block;
+}
+
+.iptracker-form__wrapper {
+  /* border: 0.2rem solid rgb(47, 138, 47); */
+  box-shadow: 0.2rem 0.2rem 0.8rem rgba(0, 0, 0, 0.4);
+  border-radius: 1.2rem;
+  display: flex;
+  width: 32%;
+  margin: 0 auto;
+  overflow: hidden;
+  transition: all 500ms ease-in-out;
+}
+
+.iptracker-form__wrapper:hover {
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+.input--ip-address {
+  background-color: #fff;
+  font-size: 1.4rem;
+  flex: 1;
+  padding: 2rem;
+}
+
+.btn--sm {
+  background-color: var(--color-gray-01);
+  padding: 0 2rem;
+}
+
+.btn--submit {
+  transition: all 250ms ease-in-out;
+}
+
+.btn--submit:hover {
+  transform: scale(0.98);
+}
+
+.btn--submit:active {
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 426px) {
+  .iptracker-form__wrapper {
+    width: 90%;
+  }
+
+  .input--ip-address {
+    font-size: 1.4rem;
+    padding: 1.5rem;
+  }
+
+  .input--ip-address::placeholder {
+    font-size: 1.2rem;
+  }
+
+  .btn--sm {
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 374px) {
+  .iptracker-form__wrapper {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 426px) {
+  .iptracker-form__wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 769px) {
+  .iptracker-form__wrapper {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .iptracker-form__wrapper {
+    width: 50%;
+  }
+}

@@ -1,0 +1,18 @@
+.ip-info-container {
+  background-image: url(/images/pattern-bg-desktop.png);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+  padding: 3rem 0 0;
+  height: 30rem;
+  position: relative;
+}
+
+.ip-tracker-map {
+  background-color: green;
+  height: calc(100vh - 30rem);
+  position: relative;
+  z-index: 1;
+}

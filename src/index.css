@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --ff-primary: "Rubik", sans-serif;
+
+  --color-gray-01: hsl(0, 0%, 17%);
+  --color-gray-02: hsl(0, 0%, 59%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  transition: all 0.3s ease;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--ff-primary);
+  font-weight: 400;
+}
+
+button,
+input,
+input::placeholder {
+  font-family: inherit;
+}
+
+button,
+input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
