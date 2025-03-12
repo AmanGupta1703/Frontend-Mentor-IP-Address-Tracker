@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
+import { Icon } from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 import { useIpAddress } from "../../hooks/useIpAddress";
@@ -20,6 +21,11 @@ function ChangeView({ center }) {
 }
 
 const initialPosition = [27.3314, 88.6138];
+const iconUrl = "https://img.icons8.com/?size=100&id=oLwbPmqGqUeT&format=png&color=000000";
+const emojiIcon = new Icon({
+  iconUrl,
+  iconSize: [42, 42],
+});
 
 function Map() {
   const [mapPosition, setMapPosition] = useState(initialPosition);
@@ -46,7 +52,7 @@ function Map() {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <ChangeView center={markerPosition} />
-      <Marker position={markerPosition}>
+      <Marker position={markerPosition} icon={emojiIcon}>
         <Popup>{location || "-"}</Popup>
       </Marker>
     </MapContainer>
